@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth transition-all">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,16 +10,29 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./img/fav.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/4a314d7cd5.js"
+      crossorigin="anonymous"
+    ></script>
     <style type="text/tailwindcss">
       @layer base {
         img {
-          @apply rounded-2xl hover:scale-105 transition-all h-full w-full object-cover origin-bottom;
+          @apply rounded-2xl  hover:scale-100 sm:hover:scale-105 transition-all h-full w-full object-cover origin-bottom;
         }
       }
     </style>
-    <title>My Gallery</title>
+    <title>The Kitty Show</title>
   </head>
   <body>
+    <div id="top"></div>
+    <div class="btm-nav z-50">
+      <a href="#top">
+        <i class="fa-solid fa-house-chimney"></i>
+      </a>
+      <a href="#gallery"><i class="fa-regular fa-images"></i></a>
+      <a href="#faq"><i class="fa-regular fa-circle-question"></i></a>
+    </div>
     <div
       class="hero min-h-screen"
       style="
@@ -43,7 +56,7 @@
     <div id="gallery" class="mb-10">
       <h1 class="text-6xl font-semibold text-center my-10">Kitty's Gallery</h1>
       <div
-        class="container mx-auto grid gap-5 grid-cols-4 auto-rows-[20rem] grid-flow-row-dense"
+        class="container mx-auto grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 auto-rows-[20rem] grid-flow-row-dense"
       >
         <div>
           <img
@@ -53,17 +66,20 @@
           />
         </div>
         <div class="row-span-2">
-          <img src="" alt="" />
-        </div>
-        <div>
           <img
-            src="https://images.unsplash.com/photo-1548366086-7f1b76106622?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=376&q=80"
+            src="https://images.unsplash.com/photo-1596854372407-baba7fef6e51?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
             alt=""
           />
         </div>
         <div>
           <img
-            src="https://images.unsplash.com/photo-1548366086-7f1b76106622?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=376&q=80"
+            src="https://images.unsplash.com/photo-1506891536236-3e07892564b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1568152950566-c1bf43f4ab28?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80"
             alt=""
           />
         </div>
@@ -91,7 +107,149 @@
             alt=""
           />
         </div>
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1615111784767-4d7c527f32a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+            alt=""
+          />
+        </div>
+        <div class="row-span-2">
+          <img
+            src="https://images.unsplash.com/photo-1511275539165-cc46b1ee89bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1518288774672-b94e808873ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=438&q=80"
+            alt=""
+          />
+        </div>
+        <div class="col-span-2">
+          <img
+            src="https://images.unsplash.com/photo-1615497001839-b0a0eac3274c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1607242792481-37f27e1d74e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+            alt=""
+          />
+        </div>
+        <div class="col-span-2">
+          <img
+            src="https://images.unsplash.com/photo-1442291928580-fb5d0856a8f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80"
+            alt=""
+          />
+        </div>
+        <div class="row-span-2">
+          <img
+            src="https://images.unsplash.com/photo-1640384974326-3e72680e0fb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1472491235688-bdc81a63246e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+            alt=""
+          />
+        </div>
+        <div class="">
+          <img
+            src="https://images.unsplash.com/photo-1596854273338-cbf078ec7071?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+            alt=""
+          />
+        </div>
+        <div class="row-span-2 col-span-2">
+          <img
+            src="https://images.unsplash.com/photo-1626602411112-10742f9a3ab8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1600880292630-ee8a00403024?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1606011334315-025e4baab810?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1618189063538-57c32befeb38?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1606491048802-8342506d6471?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=433&q=80"
+            alt=""
+          />
+        </div>
       </div>
     </div>
+    <div class="container mx-auto max-w-sm my-10">
+      <div class="btn-group grid grid-cols-2">
+        <button class="btn btn-outline cursor-not-allowed">
+          Previous page
+        </button>
+        <button class="btn btn-outline">Next</button>
+      </div>
+    </div>
+    <div id="faq" class="accordion"></div>
+    <footer
+      class="footer mb-20 p-10 bg-neutral justify-center items-center md:justify-around text-neutral-content"
+    >
+      <div>
+        <img src="./img/fav.png" class="h-20 w-20" alt="" />
+        <p>Bilai Incorporation Ltd.<br />Providing reliable cats since 2022</p>
+      </div>
+      <div>
+        <span class="footer-title">Social</span>
+        <div class="grid grid-flow-col gap-4">
+          <a
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+              ></path></svg
+          ></a>
+          <a
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+              ></path></svg
+          ></a>
+          <a
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current"
+            >
+              <path
+                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+              ></path></svg
+          ></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

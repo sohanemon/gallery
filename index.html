@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.20.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      @layer base {
+        img {
+          @apply rounded-2xl hover:scale-105 transition-all h-full w-full object-cover origin-bottom;
+        }
+      }
+    </style>
+    <title>My Gallery</title>
+  </head>
+  <body>
+    <div
+      class="hero min-h-screen"
+      style="
+        background-image: url(https://images.unsplash.com/photo-1517331156700-3c241d2b4d83?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=868&q=80);
+      "
+    >
+      <div class="hero-overlay bg-opacity-60"></div>
+      <div class="hero-content text-center text-neutral-content">
+        <div class="max-w-md">
+          <h1 class="mb-5 text-5xl font-bold">Hi, Kitty</h1>
+          <p class="mb-5">
+            Introducing you to the world of cat and cat lovers. They are
+            graceful, meticulous about self-care, and therefore very clean. All
+            things considered, cats are among the most beautiful animals in the
+            world.
+          </p>
+          <a href="#gallery" class="btn btn-info">Get Started</a>
+        </div>
+      </div>
+    </div>
+    <div id="gallery" class="mb-10">
+      <h1 class="text-6xl font-semibold text-center my-10">Kitty's Gallery</h1>
+      <div
+        class="container mx-auto grid gap-5 grid-cols-4 auto-rows-[20rem] grid-flow-row-dense"
+      >
+        <div>
+          <img
+            class=""
+            src="https://images.unsplash.com/photo-1598188306155-25e400eb5078?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+            alt=""
+          />
+        </div>
+        <div class="row-span-2">
+          <img src="" alt="" />
+        </div>
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1548366086-7f1b76106622?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=376&q=80"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1548366086-7f1b76106622?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=376&q=80"
+            alt=""
+          />
+        </div>
+        <div class="col-span-2">
+          <img
+            src="https://images.unsplash.com/photo-1493406300581-484b937cdc41?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1542652735873-fb2825bac6e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+            alt=""
+          />
+        </div>
+        <div class="row-span-2">
+          <img
+            src="https://images.unsplash.com/photo-1503777119540-ce54b422baff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=386&q=80"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1548366086-7f1b76106622?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=376&q=80"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
